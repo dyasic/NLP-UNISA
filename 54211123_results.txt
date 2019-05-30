@@ -1,0 +1,129 @@
+Q1.1:
+
+No Match
+===============================================================================
+Q1.2:
+
+Match
+Match
+===============================================================================
+
+Q1.4:
+
+From wmp@gaia.esd.ornl.gov Fri Aug 25 09:41:08 2000
+
+From: W. M. Post <wmp@gaia.esd.ornl.gov>
+
+To: Gail Chmura <chmura@felix.geog.mcgill.ca>
+
+Oak Ridge, TN 37831-6335                    wmp@ornl.gov
+
+> 805 Sherbrooke St., W        chmura@geog.mcgill.ca
+
+>From wmp@gaia.esd.ornl.gov Fri Aug 25 09:05:02 2000
+
+From: W. M. Post <wmp@gaia.esd.ornl.gov>
+
+To: "Paul, Keryn (FFP, Yarralumla)" <Keryn.Paul@ffp.csiro.au>
+
+Oak Ridge, TN 37831-6335                    wmp@ornl.gov
+
+> Keryn.Paul@ffp.csiro.au  
+
+10
+
+From: Dan_Stinnett@fws.gov
+
+Cc: Laurie_Fairchild@fws.gov
+
+                      <richard.j.beatty@mvp02.usac        To:       "'dan_stinnett@fws.gov'" <dan_stinnett@fws.gov>      
+
+
+3
+======================================================================================================================
+
+Q3.2:
+
+8
+
+======================================================================================================================
+Q3.3:
+
+Hello what is your name?Chuma
+
+How are you doing, Chuma?well
+I am glad you are well
+
+======================================================================================================================
+Q4.1:
+
+Traceback (most recent call last):
+
+  File "<ipython-input-10-c85ee59531e7>", line 1, in <module>
+    runfile('C:/Users/Chuma/Documents/UNISA/2019/COS4861/54211123_source.py', wdir='C:/Users/Chuma/Documents/UNISA/2019/COS4861')
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 704, in runfile
+    execfile(filename, namespace)
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\spyder_kernels\customize\spydercustomize.py", line 108, in execfile
+    exec(compile(f.read(), filename, 'exec'), namespace)
+
+  File "C:/Users/Chuma/Documents/UNISA/2019/COS4861/54211123_source.py", line 114, in <module>
+    tokens = nltk.word_tokenize(line)
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\nltk\tokenize\__init__.py", line 143, in word_tokenize
+    sentences = [text] if preserve_line else sent_tokenize(text, language)
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\nltk\tokenize\__init__.py", line 104, in sent_tokenize
+    tokenizer = load('tokenizers/punkt/{0}.pickle'.format(language))
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\nltk\data.py", line 868, in load
+    opened_resource = _open(resource_url)
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\nltk\data.py", line 993, in _open
+    return find(path_, path + ['']).open()
+
+  File "C:\ProgramData\Anaconda3\lib\site-packages\nltk\data.py", line 699, in find
+    raise LookupError(resource_not_found)
+
+LookupError: 
+**********************************************************************
+  Resource punkt not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+import nltk
+nltk.download('punkt')
+  
+  Attempted to load tokenizers/punkt/english.pickle
+
+  Searched in:
+    - 'C:\\Users\\Chuma/nltk_data'
+    - 'C:\\ProgramData\\Anaconda3\\nltk_data'
+    - 'C:\\ProgramData\\Anaconda3\\share\\nltk_data'
+    - 'C:\\ProgramData\\Anaconda3\\lib\\nltk_data'
+    - 'C:\\Users\\Chuma\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+    - ''
+========================================================================================================================
+
+Q4.2:
+
+def _contents(items, laplace=False):
+    counts = {}
+    for item in items:
+        counts[item] = counts.get(item,0) + 1.0
+    for k in counts:
+        if laplace:
+            counts[k] += 1.0
+            counts[k] /= (len(items)+len(counts))
+        else:
+            counts[k] /= len(items)
+    return counts
+
+
+print(_contents(['Chuma','Dyasi','Bulembu']))
+{'Chuma': 0.3333333333333333, 'Dyasi': 0.3333333333333333, 'Bulembu': 0.3333333333333333}
+
+========================================================================================================================
