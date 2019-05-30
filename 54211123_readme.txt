@@ -1,0 +1,6 @@
+The following rules apply to the running of 54211123.py:
+
+1. Download all files from the github repository NLP-UNISA.
+2. Place all files in the same directory.
+3. Open file 54211123_source.py in Spyder IDE.
+4. Press the run button and observe the results. 
